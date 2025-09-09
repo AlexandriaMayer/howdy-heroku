@@ -2,13 +2,13 @@
 let userName =""
 
 console.log("connected")
-document.getElementById('inputName').addEventListener('input', (e)=>{
-    console.log(e.target.value);
+document.getElementById('inputName').addEventListener('input', nameInput)
+function nameInput(){
     userName = document.querySelector('#inputName').value.toString()
     console.log(userName)
     return userName
-})
-document.getElementById('submission').addEventListener('submit', outputName)
+}
+document.getElementById('submission').addEventListener('click', outputName)
 /** function inputName(){
     userName = document.querySelector('#inputName').value.toString()
     console.log(userName)
@@ -34,8 +34,8 @@ function randomGreeting2(){
 }
 
 function outputName(){
-    console.log(submitted)
-    let inputtedName = inputName(),
+    console.log("submitted")
+    let inputtedName = nameInput(),
     greetingsPt1 = randomGreeting1(),
     greetingsPt2 = randomGreeting2()
     console.log(userName)
