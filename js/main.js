@@ -1,9 +1,14 @@
 // document.querySelector('#inputName').addEventListener('input', inputName)
-let userName = ""
+let userName =""
+
+console.log("connected")
 document.getElementById('inputName').addEventListener('input', (e)=>{
     console.log(e.target.value);
+    userName = document.querySelector('#inputName').value.toString()
+    console.log(userName)
+    return userName
 })
-
+document.getElementById('submission').addEventListener('submit', outputName)
 /** function inputName(){
     userName = document.querySelector('#inputName').value.toString()
     console.log(userName)
@@ -29,8 +34,10 @@ function randomGreeting2(){
 }
 
 function outputName(){
+    console.log(submitted)
     let inputtedName = inputName(),
     greetingsPt1 = randomGreeting1(),
     greetingsPt2 = randomGreeting2()
+    console.log(userName)
     document.querySelector('#outputText').innerText = `${greetingsPt1} ${inputtedName}! ${greetingsPt2}`
 }
