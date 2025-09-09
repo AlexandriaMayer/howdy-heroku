@@ -197,8 +197,10 @@ input, select, textarea {
 	justify-content: center;
 	align-items: center;
 	}
-	input[type="text"], textarea, input[type="submit"]{
+	input[type="text"], textarea, button[type="button"]{
 		background-color: rgb(40, 8, 182);
+		color: rgb(195, 173, 230);
+		margin: 1em;
 	}
 /* Container */
 
