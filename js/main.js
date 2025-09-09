@@ -1,4 +1,5 @@
 document.querySelector('#inputName').addEventListener('input', inputName)
+document.querySelector('#submission').addEventListener('click', randomGreeting1, randomGreeting2, outputName)
 
 function inputName(){
     const userName = document.querySelector('#inputName').value

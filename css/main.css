@@ -191,7 +191,15 @@ input, select, textarea {
 	p, ul, ol, dl, table {
 		margin-bottom: 2em;
 	}
-
+	body, .input-box{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	}
+	input[type="text"], textarea, input[type="submit"]{
+		background-color: rgb(40, 8, 182);
+	}
 /* Container */
 
 	.container {
@@ -199,3 +207,9 @@ input, select, textarea {
 		max-width: 100%;
 		width: 1400px;
 	}
+
+	.meowdy{
+		font-size:2em;
+		padding: 1em
+	}
+

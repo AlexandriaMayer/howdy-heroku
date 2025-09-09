@@ -7,21 +7,27 @@
         <meta name="viewport" content="width=device-width, initial-scale=1" />
 
 
-		<title>What's your name?</title>
+		<title>You're not going to pass by without saying meowdy?</title>
 
 		<link rel="stylesheet" href="css/main.css">
 </head>
 <body>
     <header>
-        <h1>Meowdy!</h1>
+        <h1 class = "meowdy">Meowdy!</h1>
     </header>
     <main>
-        <section class="input-box">
-            <label for="inputName">What's Your Name?</label>
-            <input type="text" id="inputName">
+        <section class ="glass">
+            <section class="input-box">
+                <label for="inputName">What's Your Name?</label>
+                <input type="text" id="inputName">
+                <input type="submit" id="submission" required>
+            </section>
+            <section class="output-box">
+                <h2 id = "outputText"></h2>
+            </section>
         </section>
-        <section class="output-box">
-            <h2 id = "outputText"></h2>
-        </section>
+        
     </main>
+    <!--<script src='https://cdn.jsdelivr.net/npm/temporal-polyfill@0.3.0/global.min.js'></script>-->
+    <script src="js/script.js"></script>
 </body>
